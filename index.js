@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use("/user", userRouter)
-app.use("/enquiry", enquiryRouter)
+app.use("/enquiries", enquiryRouter)
 
 const port = process.env.port || 8080
 app.listen(port, async () => {
